@@ -5,6 +5,11 @@ import CortanaImg from './images/cortana.png'
 import SiriImg from './images/siri.png'
 
 function App() {
+    const handleClick = () => {
+        console.log('Button was clicked!');
+    };
+
+
     return (
         <div>
             <section className='hero is-primary'>
@@ -38,6 +43,11 @@ function App() {
                     </div>
                 </section>
             </div>
+
+            <div>
+                <button className='button is-link is-rounded' onClick={handleClick}>Add Animal</button>
+            </div>
+
         </div>
     )
 }
